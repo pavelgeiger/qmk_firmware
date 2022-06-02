@@ -17,7 +17,6 @@
 #include QMK_KEYBOARD_H
 #include <wait.h>
 
-#define _______ KC_TRNS
 #define XXXXXXX KC_NO
 
 enum {
