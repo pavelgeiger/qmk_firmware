@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PSCR, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX,
         _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX,
         _______, XXXXXXX,    XXXXXXX,    XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   _______,
-        RESET,   _______,    _______,    XXXXXXX,     XXXXXXX,      _______,     XXXXXXX, KC__MUTE, KC__VOLDOWN, KC__VOLUP, XXXXXXX
+        RESET,   MU_TOG,     CK_TOGG,    XXXXXXX,     XXXXXXX,      _______,     XXXXXXX, KC__MUTE, KC__VOLDOWN, KC__VOLUP, XXXXXXX
     ),
 
     [UP_DOWN] = LAYOUT_preonic_1x2uC(
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PSCR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_SFTENT,
-        KC_LCTL, KC_LGUI, KC_LGUI, KC_LALT, _______,      _______,     _______, _______, _______, _______, _______
+        KC_LCTL, KC_LGUI, KC_LGUI, KC_LALT, _______,      _______,     _______, _______, CK_UP, CK_DOWN, _______
     )
 };
 
