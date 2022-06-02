@@ -36,6 +36,12 @@ SPACE,
 UP_DOWN
 };
 
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [BASE] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  }
+};
+#endif
+
 #define SPACE_FN LT(SPACE, KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -109,30 +115,35 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-void encoder_update_user(uint8_t index, bool clockwise) {
-    if (IS_LAYER_ON(1))
-    {
-         if (clockwise) {
-            tap_code(KC_MS_WH_UP);
-        } else {
-            tap_code(KC_MS_WH_DOWN);
-        }
-    }
-    else if (IS_LAYER_ON(2))
-    {
-         if (clockwise) {
-            tap_code(KC_MS_UP);
-        } else {
-            tap_code(KC_MS_DOWN);
-        }
-    }else {
-        if (clockwise) {
-            tap_code(KC__VOLUP);
-        } else {
-            tap_code(KC__VOLDOWN);
-        }
     }
 }
+
+//bool encoder_update_user(uint8_t index, bool clockwise) {
+//    if (IS_LAYER_ON(1))
+//    {
+//         if (clockwise) {
+//            tap_code(KC_MS_WH_UP);
+//        } else {
+//            tap_code(KC_MS_WH_DOWN);
+//        }
+//    }
+//    else if (IS_LAYER_ON(2))
+//    {
+//         if (clockwise) {
+//            tap_code(KC_MS_UP);
+//        } else {
+//            tap_code(KC_MS_DOWN);
+//        }
+//    }else {
+//        if (clockwise) {
+//            tap_code(KC__VOLUP);
+//        } else {
+//            tap_code(KC__VOLDOWN);
+//        }
+//    }
+//
+//    return false;
+//}
 
 float tone_caps_on[][2]    = SONG(CAPS_LOCK_ON_SOUND);
 float tone_caps_off[][2]   = SONG(CAPS_LOCK_OFF_SOUND);

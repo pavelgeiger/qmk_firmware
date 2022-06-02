@@ -22,6 +22,7 @@ RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
 WS2812_DRIVER = pwm
 API_SYSEX_ENABLE = no
 TAP_DANCE_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
 
 # Do not enable RGB_MATRIX_ENABLE together with RGBLIGHT_ENABLE
 RGB_MATRIX_ENABLE = no
