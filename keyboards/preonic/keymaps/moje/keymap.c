@@ -38,7 +38,11 @@ UP_DOWN
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [BASE] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  }
+    [BASE] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [UP] =   { ENCODER_CCW_CW(LCTL(KC_Z), LCTL(S(KC_Z))) },
+    [DOWN] = { ENCODER_CCW_CW(_______, _______) },
+    [SPACE] = { ENCODER_CCW_CW(_______, _______) },
+    [UP_DOWN] = { ENCODER_CCW_CW(_______, _______) }
 };
 #endif
 
