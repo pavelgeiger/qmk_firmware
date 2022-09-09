@@ -71,11 +71,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [SPACE] = LAYOUT_preonic_1x2uC(
-        _______, _______,    _______,    _______,     _______, _______, _______, _______, _______,  _______,     _______,   _______, \
-        KC_PSCR, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX,
-        _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX,
-        _______, XXXXXXX,    XXXXXXX,    XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   _______,
-        QK_BOOT, MU_TOG,     CK_TOGG,    XXXXXXX,     XXXXXXX,      _______,     XXXXXXX, KC__MUTE, KC__VOLDOWN, KC__VOLUP, XXXXXXX
+        _______,   _______,    _______,    _______,     _______, _______, _______, _______, _______,  _______,     _______,   _______, \
+        KC_PSCR,   KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX,
+        _______,   KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX,
+        QK_REBOOT, XXXXXXX,    XXXXXXX,    XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   _______,
+        QK_BOOT,   MU_TOG,     CK_TOGG,    XXXXXXX,     XXXXXXX,      _______,     XXXXXXX, KC__MUTE, KC__VOLDOWN, KC__VOLUP, XXXXXXX
     ),
 
     [UP_DOWN] = LAYOUT_preonic_1x2uC(
