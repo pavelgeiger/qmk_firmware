@@ -20,7 +20,7 @@ enum {
   TD_LSHIFT_CAPS = 0,
 };
 
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
   [TD_LSHIFT_CAPS]  = ACTION_TAP_DANCE_DOUBLE(KC_LSFT, KC_CAPS),
 };
 
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_planck_mit(
   KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,   KC_U,     KC_I,    KC_O,   KC_P,    KC_BSPC,
   KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,   KC_J,     KC_K,    KC_L,   KC_SCLN, RALT(KC_QUOT),
-  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,   KC_M,     KC_COMM, KC_DOT, KC_SLSH, KC_SFTENT ,
+  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,   KC_M,     KC_COMM, KC_DOT, KC_SLSH, SC_SENT ,
   KC_LCTL, KC_LGUI, KC_LGUI, KC_LALT, MO(UP),    SPACE_FN,      MO(DOWN), KC_LEFT, KC_UP,  KC_DOWN, KC_RGHT
 ),
 
@@ -75,18 +75,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [DOWN] = LAYOUT_planck_mit(
-  KC_GRV,  RALT(KC_1), RALT(KC_2), RALT(KC_3), RALT(KC_4), RALT(KC_5), RALT(KC_6), RALT(KC_7), RALT(KC_8),    RALT(KC_9),    RALT(KC_0),  KC_DEL,
-  XXXXXXX, RALT(KC_A), S(KC_LBRC), RALT(KC_F), XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RALT(KC_RBRC), RALT(KC_BSLS), KC_LBRC,     KC_EQUAL,
-  _______, XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RALT(KC_B), RALT(KC_N), XXXXXXX,    RALT(KC_COMM), RALT(KC_DOT),  XXXXXXX,     XXXXXXX,
-  _______, _______,    _______,    _______,    _______,           _______,         _______,    KC__MUTE,      KC__VOLUP,     KC__VOLDOWN, XXXXXXX
+  KC_GRV,  RALT(KC_1), RALT(KC_2), RALT(KC_3), RALT(KC_4), RALT(KC_5), RALT(KC_6), RALT(KC_7), RALT(KC_8),    RALT(KC_9),      RALT(KC_0),        KC_DEL,
+  XXXXXXX, RALT(KC_A), S(KC_LBRC), RALT(KC_F), XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RALT(KC_RBRC), RALT(KC_BSLS),   KC_LBRC,           KC_EQUAL,
+  _______, XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RALT(KC_B), RALT(KC_N), XXXXXXX,    RALT(KC_COMM), RALT(KC_DOT),    XXXXXXX,           XXXXXXX,
+  _______, _______,    _______,    _______,    _______,           _______,         _______,    KC_KB_MUTE,    KC_KB_VOLUME_UP, KC_KB_VOLUME_DOWN, XXXXXXX
 ),
 
 
 [SPACE] = LAYOUT_planck_mit(
-  KC_PSCR,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX,   XXXXXXX,     XXXXXXX,
-  XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX,   XXXXXXX,     XXXXXXX,
-  QK_REBOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX,   XXXXXXX,     KC_MEDIA_PLAY_PAUSE,
-  QK_BOOT,   RGB_TOG, RGB_VAI, RGB_MOD, XXXXXXX,      _______,     XXXXXXX, KC_MEDIA_PREV_TRACK,  KC__VOLUP, KC__VOLDOWN, KC_MEDIA_NEXT_TRACK
+  KC_PSCR,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX,         XXXXXXX,           XXXXXXX,
+  XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX,         XXXXXXX,           XXXXXXX,
+  QK_REBOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX,         XXXXXXX,           KC_MEDIA_PLAY_PAUSE,
+  QK_BOOT,   RGB_TOG, RGB_VAI, RGB_MOD, XXXXXXX,      _______,     XXXXXXX, KC_MEDIA_PREV_TRACK,  KC_KB_VOLUME_UP, KC_KB_VOLUME_DOWN, KC_MEDIA_NEXT_TRACK
 )
 
 
