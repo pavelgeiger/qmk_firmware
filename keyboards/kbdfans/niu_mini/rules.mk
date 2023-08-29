@@ -1,9 +1,3 @@
-# MCU name
-MCU = atmega32u4
-
-# Bootloader selection
-BOOTLOADER = atmel-dfu
-
 # Build Options
 #   change yes to no to disable
 #
@@ -20,7 +14,6 @@ RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight.
 TAP_DANCE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 
-LAYOUTS = ortho_4x12 planck_mit
 LAYOUTS_HAS_RGB = no
 
 # Disable unsupported hardware
