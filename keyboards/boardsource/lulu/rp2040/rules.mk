@@ -1,1 +1,5 @@
 SRC += lib/oled.c
+CAPS_WORD_ENABLE = yes
+#KEY_OVERRIDE_ENABLE = yes
+CONSOLE_ENABLE = no
+WPM_ENABLE = no
