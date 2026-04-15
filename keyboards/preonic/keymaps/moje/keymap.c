@@ -34,9 +34,9 @@ enum layers {
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [BASE] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD) },
-    [UP] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD) },
-    [DOWN] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD)},
-    [SPACE] = { ENCODER_CCW_CW(KC_PGDN, KC_PGUP)}
+    [UP] = { ENCODER_CCW_CW(KC_MNXT, KC_MPRV) },
+    [DOWN] = { ENCODER_CCW_CW(KC_HOME, KC_END)},
+    [SPACE] = { ENCODER_CCW_CW(KC_PGUP, KC_PGDN)}
 };
 #endif
 
